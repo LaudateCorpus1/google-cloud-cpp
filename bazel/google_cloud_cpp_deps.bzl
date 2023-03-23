@@ -118,11 +118,11 @@ def google_cloud_cpp_deps():
     if "com_github_grpc_grpc" not in native.existing_rules():
         http_archive(
             name = "com_github_grpc_grpc",
-            strip_prefix = "grpc-1.43.2",
+            strip_prefix = "grpc-1.53.0",
             urls = [
-                "https://github.com/grpc/grpc/archive/v1.43.2.tar.gz",
+                "https://github.com/grpc/grpc/archive/v1.53.0.tar.gz",
             ],
-            sha256 = "b74ce7d26fe187970d1d8e2c06a5d3391122f7bc1fdce569aff5e435fb8fe780",
+            sha256 = "9717ffc52120861136e478155c2ff3a9c21740e2244de52fa966f376d7471adf",
         )
 
     # We use the cc_proto_library() rule from @com_google_protobuf, which
